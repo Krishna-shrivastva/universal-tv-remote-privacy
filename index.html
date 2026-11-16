@@ -1,0 +1,180 @@
+<!doctype html>
+<!--
+  Privacy policy for Universal TV Remote (Android).
+  Host with GitHub Pages (Settings > Pages > Branch: main, folder: /docs) and put the resulting URL into
+  release.properties as PRIVACY_POLICY_URL and into Play Console > App content > Privacy policy.
+  BEFORE PUBLISHING: replace every krishnashrivastva.world@gmail.com with the same address as SUPPORT_EMAIL in release.properties,
+  and Krishna Shrivastva with the developer name shown on Google Play.
+  Keep this page in sync with the in-app policy (strings_settings.xml + strings_release.xml) and docs/data-safety.md.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Universal TV Remote – Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f2a; --muted:#596173; --accent:#2f6fec; --rule:#e2e6ee; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d1424; --fg:#e8ecf4; --muted:#a3adc2; --accent:#7aa7ff; --rule:#24304a; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.7rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:28px 0 8px; }
+  h3 { font-size:1.05rem; margin:20px 0 6px; }
+  p, li { color:var(--fg); }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  nav { margin:12px 0 24px; }
+  nav a { margin-right:16px; }
+  section + section { border-top:1px solid var(--rule); margin-top:40px; padding-top:8px; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:6px 8px; border-bottom:1px solid var(--rule); }
+</style>
+</head>
+<body>
+<main>
+<h1>Universal TV Remote – Privacy Policy</h1>
+<p class="muted">Effective date: 21 October 2026 · App: Universal TV Remote (Android, package <code>com.universalremote.tv</code>) · Developer: Krishna Shrivastva</p>
+<nav><a href="#en">English</a> <a href="#hi" lang="hi">हिन्दी</a></nav>
+
+<section id="en" lang="en">
+<h2>Summary</h2>
+<ul>
+  <li>No account. The app has no servers of its own and we (the developer) receive no data from it.</li>
+  <li>Your TVs, smart-home devices, settings and history are stored only on your phone.</li>
+  <li>The only third-party SDK that collects data is Google AdMob (ads) with Google's consent tool (UMP). There are no analytics or tracking SDKs.</li>
+  <li>Permissions (microphone, Bluetooth, nearby devices, notifications) are requested only when you use the feature that needs them.</li>
+</ul>
+
+<h2>1. Data stored on your phone</h2>
+<p>The app stores the following data only in its private storage on your device. It is not uploaded by the app and is deleted when you uninstall the app (or remove the device/item in the app):</p>
+<ul>
+  <li>Saved TVs and devices: name, brand/model, connection type, local IP address, MAC address (for Wake-on-LAN) and pairing keys/certificates created when you pair with a TV.</li>
+  <li>IR remote profile choices, connection history and app preferences (theme, language, etc.).</li>
+  <li>Smart-home devices (lights, plugs, AC/fan IR remotes) and their local credentials. For TP-Link Tapo devices you enter your TP-Link account e-mail and password; these are encrypted with a key kept in the Android Keystore and used only to sign in to your devices on your local network.</li>
+  <li>The optional on-device AI model file, if you download it.</li>
+  <li>A crash report, if the app crashes (see section 6).</li>
+</ul>
+<p>The app disables Android cloud backup for this data, so it does not go to your Google Drive backup.</p>
+
+<h2>2. Local network, Bluetooth and infrared</h2>
+<p>To find and control TVs, streaming boxes, lights and plugs, the app searches your local Wi-Fi network (mDNS/SSDP and similar local protocols) and talks directly to those devices. Bluetooth is used only when you start Bluetooth pairing; infrared uses your phone's IR blaster. Device names and addresses found this way stay on your phone and are not sent to us or to any analytics service.</p>
+
+<h2>3. Voice commands and microphone</h2>
+<p>The microphone is used only after you tap the microphone button. Your speech is converted to text by your phone's speech-recognition service. Where your phone supports it, this happens on the device; otherwise your phone's speech service (usually Google) may process the audio according to its own privacy policy. This app does not record, store or upload audio. When the app supports it, voice search text can be sent to your TV on your local network.</p>
+
+<h2>4. Optional on-device AI model</h2>
+<p>You can choose to download a small language model (Qwen3-0.6B) in Settings to improve voice commands. The file (about 600 MB) is downloaded directly from huggingface.co only when you tap Download; like any download, Hugging Face receives your IP address and standard request data. After download the model runs entirely on your phone and your commands are never sent anywhere. You can delete the model at any time.</p>
+
+<h2>5. Advertising (Google AdMob)</h2>
+<ul>
+  <li>The app shows banner ads on the Home, Saved Devices and Settings screens and optional rewarded ads that you choose to watch. Ads never appear on remote-control, pairing, discovery or voice screens.</li>
+  <li>Ads are provided by Google AdMob. The Google Mobile Ads SDK may collect your device's advertising ID, IP address (used to estimate general location), app interactions, diagnostics and device information to show, measure and limit ads and to prevent fraud. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</li>
+  <li>Where required (for example in the EEA, UK and Switzerland, and certain US states), Google's User Messaging Platform asks for your consent or choices before ads are personalised. You can change your choice at any time in Settings &gt; Ad Privacy Choices.</li>
+  <li>You can reset or delete your advertising ID in your phone's system settings (Settings &gt; Privacy &gt; Ads, or Google &gt; Ads).</li>
+</ul>
+
+<h2>6. Crash reports and feedback</h2>
+<p>If the app crashes, it saves one technical report on your phone: error details (stack trace), app version, Android version and phone model. Network addresses and e-mail addresses are removed from it. Nothing is sent automatically. On the next launch the app may ask whether you want to e-mail the report; it is sent only if you choose to send it from your e-mail app. The same applies to "Send feedback": your e-mail app opens with a pre-filled message that you can review before sending. If you e-mail us, we receive your e-mail address and the message and use them only to reply and improve the app.</p>
+
+<h2>7. Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Internet, network state, Wi-Fi state, Wi-Fi multicast</td><td>Find and control TVs and smart devices on your local network; load ads; optional model download.</td></tr>
+  <tr><td>Nearby Wi-Fi devices (Android 13+)</td><td>Discover devices on your Wi-Fi network. Not used to determine your location.</td></tr>
+  <tr><td>Bluetooth scan/connect (location on Android 11 and older)</td><td>Only when you pair a Bluetooth TV/box. Not used to track your location.</td></tr>
+  <tr><td>Infrared</td><td>Send IR remote signals on phones with an IR blaster.</td></tr>
+  <tr><td>Microphone</td><td>Voice commands, only after you tap the mic.</td></tr>
+  <tr><td>Notifications, foreground service (connected device)</td><td>Optional notification / lock-screen remote that keeps the connection to your TV while you use it.</td></tr>
+</table>
+
+<h2>8. What we do not collect</h2>
+<p>No contacts, SMS, call logs, photos, files or precise location. We do not sell personal data. The app has no user accounts of its own.</p>
+
+<h2>9. Children</h2>
+<p>The app is a general-audience utility and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+<h2>10. Data retention and deletion</h2>
+<p>Data on your phone stays until you delete it in the app, clear the app's storage or uninstall the app. We hold no copy. For data collected by Google for ads, see Google's privacy policy and your Google account / device ad settings.</p>
+
+<h2>11. Security</h2>
+<p>Pairing keys and smart-home credentials are kept in app-private storage; smart-home secrets are encrypted with an Android Keystore key. Network downloads (AI model) use HTTPS and are integrity-checked (SHA-256).</p>
+
+<h2>12. Changes</h2>
+<p>We will update this page and the in-app policy if our practices change. The effective date above shows the latest version.</p>
+
+<h2>13. Contact</h2>
+<p>Questions or requests: <a href="mailto:krishnashrivastva.world@gmail.com">krishnashrivastva.world@gmail.com</a></p>
+</section>
+
+<section id="hi" lang="hi">
+<h2>सारांश</h2>
+<ul>
+  <li>कोई अकाउंट नहीं। ऐप का अपना कोई सर्वर नहीं है और हमें (डेवलपर को) ऐप से कोई डेटा नहीं मिलता।</li>
+  <li>आपके TV, स्मार्ट-होम डिवाइस, सेटिंग्स और हिस्ट्री सिर्फ़ आपके फ़ोन पर सेव रहते हैं।</li>
+  <li>डेटा इकट्ठा करने वाला अकेला थर्ड-पार्टी SDK Google AdMob (विज्ञापन) और Google का सहमति टूल (UMP) है। कोई एनालिटिक्स या ट्रैकिंग SDK नहीं है।</li>
+  <li>परमिशन (माइक्रोफ़ोन, Bluetooth, आस-पास के डिवाइस, नोटिफ़िकेशन) सिर्फ़ तभी माँगी जाती हैं जब आप वह फ़ीचर इस्तेमाल करते हैं।</li>
+</ul>
+
+<h2>1. आपके फ़ोन पर सेव डेटा</h2>
+<p>ऐप नीचे दिया डेटा सिर्फ़ आपके डिवाइस की प्राइवेट स्टोरेज में रखता है। ऐप इसे अपलोड नहीं करता, और ऐप अनइंस्टॉल करने (या ऐप में उस आइटम को हटाने) पर यह मिट जाता है:</p>
+<ul>
+  <li>सेव किए गए TV और डिवाइस: नाम, ब्रांड/मॉडल, कनेक्शन का प्रकार, लोकल IP पता, MAC पता (Wake-on-LAN के लिए) और TV से पेयर करते समय बनी पेयरिंग की/सर्टिफ़िकेट।</li>
+  <li>IR रिमोट प्रोफ़ाइल, कनेक्शन हिस्ट्री और ऐप की पसंद (थीम, भाषा आदि)।</li>
+  <li>स्मार्ट-होम डिवाइस (लाइट, प्लग, AC/पंखे के IR रिमोट) और उनकी लोकल जानकारी। TP-Link Tapo डिवाइस के लिए आप अपना TP-Link अकाउंट ईमेल और पासवर्ड डालते हैं; ये Android Keystore की की से एन्क्रिप्ट रहते हैं और सिर्फ़ आपके लोकल नेटवर्क पर आपके डिवाइस में साइन इन करने के लिए इस्तेमाल होते हैं।</li>
+  <li>वैकल्पिक ऑन-डिवाइस AI मॉडल फ़ाइल, अगर आप उसे डाउनलोड करें।</li>
+  <li>ऐप क्रैश होने पर एक क्रैश रिपोर्ट (सेक्शन 6 देखें)।</li>
+</ul>
+<p>ऐप इस डेटा के लिए Android क्लाउड बैकअप बंद रखता है, इसलिए यह आपके Google Drive बैकअप में नहीं जाता।</p>
+
+<h2>2. लोकल नेटवर्क, Bluetooth और इन्फ्रारेड</h2>
+<p>TV, स्ट्रीमिंग बॉक्स, लाइट और प्लग ढूँढने और चलाने के लिए ऐप आपके लोकल Wi-Fi नेटवर्क पर खोज करता है (mDNS/SSDP जैसे लोकल प्रोटोकॉल) और उन डिवाइस से सीधे बात करता है। Bluetooth सिर्फ़ तब इस्तेमाल होता है जब आप Bluetooth पेयरिंग शुरू करते हैं; इन्फ्रारेड आपके फ़ोन का IR ब्लास्टर इस्तेमाल करता है। इस तरह मिले डिवाइस के नाम और पते आपके फ़ोन पर ही रहते हैं; ये हमें या किसी एनालिटिक्स सर्विस को नहीं भेजे जाते।</p>
+
+<h2>3. वॉइस कमांड और माइक्रोफ़ोन</h2>
+<p>माइक्रोफ़ोन सिर्फ़ तब इस्तेमाल होता है जब आप माइक बटन दबाते हैं। आपकी बोली को आपके फ़ोन की स्पीच-रिकग्निशन सर्विस टेक्स्ट में बदलती है। जिन फ़ोन में यह सुविधा है, वहाँ यह फ़ोन पर ही होता है; बाकी फ़ोन में आपकी स्पीच सर्विस (आमतौर पर Google) अपनी प्राइवेसी पॉलिसी के तहत ऑडियो प्रोसेस कर सकती है। यह ऐप ऑडियो रिकॉर्ड, सेव या अपलोड नहीं करता। जहाँ सपोर्ट हो, वॉइस सर्च का टेक्स्ट आपके लोकल नेटवर्क पर आपके TV को भेजा जा सकता है।</p>
+
+<h2>4. वैकल्पिक ऑन-डिवाइस AI मॉडल</h2>
+<p>वॉइस कमांड बेहतर करने के लिए आप Settings में एक छोटा लैंग्वेज मॉडल (Qwen3-0.6B) डाउनलोड कर सकते हैं। यह फ़ाइल (लगभग 600 MB) सिर्फ़ Download दबाने पर सीधे huggingface.co से डाउनलोड होती है; किसी भी डाउनलोड की तरह Hugging Face को आपका IP पता और सामान्य रिक्वेस्ट डेटा मिलता है। डाउनलोड के बाद मॉडल पूरी तरह आपके फ़ोन पर चलता है और आपके कमांड कहीं नहीं भेजे जाते। आप मॉडल कभी भी डिलीट कर सकते हैं।</p>
+
+<h2>5. विज्ञापन (Google AdMob)</h2>
+<ul>
+  <li>ऐप Home, Saved Devices और Settings स्क्रीन पर बैनर विज्ञापन दिखाता है, और वैकल्पिक रिवॉर्ड वाले विज्ञापन जिन्हें आप खुद देखना चुनते हैं। रिमोट, पेयरिंग, खोज या वॉइस स्क्रीन पर कभी विज्ञापन नहीं दिखते।</li>
+  <li>विज्ञापन Google AdMob देता है। Google Mobile Ads SDK विज्ञापन दिखाने, मापने, सीमित करने और धोखाधड़ी रोकने के लिए आपके डिवाइस की विज्ञापन ID, IP पता (सामान्य लोकेशन के अनुमान के लिए), ऐप इंटरैक्शन, डायग्नॉस्टिक्स और डिवाइस की जानकारी ले सकता है। देखें <a href="https://policies.google.com/privacy?hl=hi">Google की प्राइवेसी पॉलिसी</a>।</li>
+  <li>जहाँ ज़रूरी है (जैसे EEA, UK, स्विट्ज़रलैंड और कुछ US राज्य), वहाँ विज्ञापन पर्सनलाइज़ करने से पहले Google का User Messaging Platform आपकी सहमति माँगता है। आप Settings &gt; Ad Privacy Choices में कभी भी अपनी पसंद बदल सकते हैं।</li>
+  <li>आप अपने फ़ोन की सिस्टम सेटिंग में विज्ञापन ID रीसेट या डिलीट कर सकते हैं।</li>
+</ul>
+
+<h2>6. क्रैश रिपोर्ट और फ़ीडबैक</h2>
+<p>अगर ऐप क्रैश होता है, तो वह आपके फ़ोन पर एक तकनीकी रिपोर्ट सेव करता है: एरर की जानकारी (स्टैक ट्रेस), ऐप वर्ज़न, Android वर्ज़न और फ़ोन मॉडल। इसमें से नेटवर्क पते और ईमेल पते हटा दिए जाते हैं। अपने-आप कुछ नहीं भेजा जाता। अगली बार ऐप खुलने पर वह पूछ सकता है कि क्या आप रिपोर्ट ईमेल करना चाहते हैं; यह तभी भेजी जाती है जब आप अपने ईमेल ऐप से भेजें। "Send feedback" भी ऐसे ही काम करता है। अगर आप हमें ईमेल करते हैं, तो हमें आपका ईमेल पता और संदेश मिलता है, जिसका इस्तेमाल सिर्फ़ जवाब देने और ऐप बेहतर करने के लिए होता है।</p>
+
+<h2>7. परमिशन</h2>
+<table>
+  <tr><th>परमिशन</th><th>क्यों</th></tr>
+  <tr><td>इंटरनेट, नेटवर्क स्टेट, Wi-Fi स्टेट, Wi-Fi मल्टीकास्ट</td><td>लोकल नेटवर्क पर TV और स्मार्ट डिवाइस ढूँढना और चलाना; विज्ञापन; वैकल्पिक मॉडल डाउनलोड।</td></tr>
+  <tr><td>आस-पास के Wi-Fi डिवाइस (Android 13+)</td><td>Wi-Fi नेटवर्क पर डिवाइस ढूँढना। लोकेशन जानने के लिए इस्तेमाल नहीं।</td></tr>
+  <tr><td>Bluetooth स्कैन/कनेक्ट (Android 11 और पुराने में लोकेशन)</td><td>सिर्फ़ Bluetooth TV/बॉक्स पेयर करते समय। लोकेशन ट्रैक करने के लिए नहीं।</td></tr>
+  <tr><td>इन्फ्रारेड</td><td>IR ब्लास्टर वाले फ़ोन से IR सिग्नल भेजना।</td></tr>
+  <tr><td>माइक्रोफ़ोन</td><td>वॉइस कमांड, सिर्फ़ माइक दबाने के बाद।</td></tr>
+  <tr><td>नोटिफ़िकेशन, फ़ोरग्राउंड सर्विस (कनेक्टेड डिवाइस)</td><td>वैकल्पिक नोटिफ़िकेशन / लॉक-स्क्रीन रिमोट, जो इस्तेमाल के दौरान TV से कनेक्शन बनाए रखता है।</td></tr>
+</table>
+
+<h2>8. हम क्या इकट्ठा नहीं करते</h2>
+<p>कोई कॉन्टैक्ट, SMS, कॉल लॉग, फ़ोटो, फ़ाइल या सटीक लोकेशन नहीं। हम निजी डेटा नहीं बेचते। ऐप का अपना कोई यूज़र अकाउंट नहीं है।</p>
+
+<h2>9. बच्चे</h2>
+<p>यह ऐप सभी के लिए एक यूटिलिटी है और 13 साल से कम उम्र के बच्चों के लिए नहीं बनाया गया है। हम जानबूझकर बच्चों की निजी जानकारी इकट्ठा नहीं करते।</p>
+
+<h2>10. डेटा कब तक रहता है और कैसे हटाएँ</h2>
+<p>फ़ोन पर डेटा तब तक रहता है जब तक आप उसे ऐप में डिलीट न करें, ऐप की स्टोरेज क्लियर न करें या ऐप अनइंस्टॉल न करें। हमारे पास इसकी कोई कॉपी नहीं होती। विज्ञापन के लिए Google के डेटा के बारे में Google की प्राइवेसी पॉलिसी और अपनी Google अकाउंट / डिवाइस विज्ञापन सेटिंग देखें।</p>
+
+<h2>11. सुरक्षा</h2>
+<p>पेयरिंग की और स्मार्ट-होम जानकारी ऐप की प्राइवेट स्टोरेज में रहती है; स्मार्ट-होम सीक्रेट Android Keystore की की से एन्क्रिप्ट रहते हैं। AI मॉडल डाउनलोड HTTPS से होता है और SHA-256 से जाँचा जाता है।</p>
+
+<h2>12. बदलाव</h2>
+<p>अगर हमारे तरीके बदलते हैं तो हम यह पेज और ऐप के अंदर की पॉलिसी अपडेट करेंगे। ऊपर दी गई तारीख नया वर्ज़न दिखाती है। किसी अंतर की स्थिति में अंग्रेज़ी वर्ज़न मान्य होगा।</p>
+
+<h2>13. संपर्क</h2>
+<p>सवाल या अनुरोध: <a href="mailto:krishnashrivastva.world@gmail.com">krishnashrivastva.world@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
